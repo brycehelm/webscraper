@@ -88,7 +88,7 @@ def crawl(start_url, base_domain, max_pages=1000, initial_batch_size=5):
                     'text': f"Failed to fetch content - {str(e)}"
                 })
 
-            time.sleep(2)
+            time.sleep(0.1)
 
     except KeyboardInterrupt:
         logging.info("KeyboardInterrupt detected. Saving collected content...")
